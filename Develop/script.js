@@ -22,6 +22,19 @@ function writePassword() {
   passwordText.value = password;
 
 }
+function generatePassword(){
+  //function for password length
+  var passwordLength=prompt("how long should the password be?");
+
+  if(passwordLength<8 || passwordLength>128 || isNaN(passwordLength)) {
+alert("invalid length - please enter a number between 8 and 128")
+     return
+  }
+  var includeUppercase=prompt("include uppercase letters?");
+  var includeLowercase=prompt("include lowercase letters?");
+  var includeNumbers=prompt("include uppercase letters?");
+  var includeSpecialChars=prompt("include uppercase letters?");
+} 
 
 // Add event listener to generate button
 //generateBtn.addEventListener("click", writePassword);
