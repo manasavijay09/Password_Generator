@@ -6,7 +6,7 @@ var generateBtn = document.querySelector("#generate");
  var lowercaseChars="abcdefghijklamnoqrstuvwxyz;"
  var numberChars="0123456789";
  var specialChars="!@#$%^&*()_+";
- var inputs=[""] //declared to store user input
+// var inputs=[""] //declared to store user input
  var randomPassword=" " // to store password
 
  // Add event listener to generate button
@@ -24,6 +24,7 @@ function writePassword() {
 }
 function generatePassword() {
   //function for password length
+  var inputs=[""] //declared to store user input
   var passwordLength=prompt("how long should the password be?");
   //function to request password length
   if(passwordLength<8 || passwordLength>128 || isNaN(passwordLength)) {
